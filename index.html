@@ -16,7 +16,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta
     name="description"
-    content="A list of cool math problems organized by prerequisite knowledge."
+    content="A list of cool math problems organized by prerequisite knowledge, but widely varying in difficulty. Some problems are quite trivial; others are very difficult."
   >
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
@@ -59,13 +59,16 @@
       margin: 2rem auto;
     }
 
+    .body p {
+      margin-bottom: 4rem;
+    }
+
     .katex-html {
-      visibility: hidden;
+      display: none;
     }
 
     .katex {
-      margin-right: -0.6rem;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       line-height: 0;
     }
   </style>
@@ -74,17 +77,19 @@
 <body>
   <header class="title">
     <h1 class="title__heading">cool math problems</h1>
-    <caption class="title__caption">To suggest other cool problems, email <a class="title__caption--link" href="mailto:coolmathproblems@gmail.com" target="_blank">coolmathproblems@gmail.com</a> or <a class="title__caption--link" href="https://github.com/cabellwg/coolmathproblems" target="_blank">submit a pull request</a>. Problems are organized by prerequisite knowledge, not difficulty.</caption>
+    <caption class="title__caption">To suggest other cool problems, email <a class="title__caption--link" href="mailto:coolmathproblems@gmail.com" target="_blank">coolmathproblems@gmail.com</a> or <a class="title__caption--link" href="https://github.com/cabellwg/coolmathproblems" target="_blank">submit a pull request</a>. Problems are organized by prerequisite knowledge, not difficulty. Some problems are trivial; others are quite difficult.</caption>
   </header>
 
   <section id="elementary" class="body">
     <h3 class="body__heading">elementary</h3> 
     <p>To organize a secret Santa exchange, $n$ people each put their own name into a hat. Then, they pass the hat around in a circle, each person choosing a name at random. As $n$ increases, what does the probability that no person will draw their own name approach?</p>
+    
   </section>
 
   <section id="undergraduate" class="body">
     <h3 class="body__heading">undergraduate</h3> 
-    <p></p>
+    <p>Assume that no one has more than 200,000 hairs on their head. Assume also that London has a population of 8.7 million. Prove that there are two people in London with the exact same number of hairs on their head.</p>
+    <p>Do there exist groups $G$ and $H$ distinct up to isomorphism such that $G \le H \le G$, where $\le$ is the subgroup relation?</p> 
   </section>
  
   <section id="graduate" class="body">
