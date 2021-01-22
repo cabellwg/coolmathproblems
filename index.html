@@ -16,27 +16,57 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta
     name="description"
-    content="A list of cool math problems organized by difficulty."
+    content="A list of cool math problems organized by prerequisite knowledge."
   >
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
   <style>
     html, body {
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       width: 100%;
       height: 100%;
+      max-width: 800px;
 
       font-family: -apple-system, BlinkMacSystemFont,
         "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
         "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
       font-size: 16px;
-      color: #fafafa;
+      line-height: 1.7;
+      color: #333;
 
-      background-color: #333;
+      background-color: #fefefe;
     }
 
     .title {
-        text-align: center;
+      margin: 0 auto;
+      padding: 2rem;
+
+      text-align: center;
+    }
+
+    .title__caption--link {
+      color: #333;
+    }
+
+    .title__caption--link:hover {
+      text-decoration-style: double;
+    }
+
+    .body {
+      padding: 1rem;
+      margin: 2rem auto;
+    }
+
+    .katex-html {
+      visibility: hidden;
+    }
+
+    .katex {
+      margin-right: -0.6rem;
+      font-size: 1.15rem;
+      line-height: 0;
     }
   </style>
 </head>
@@ -44,9 +74,23 @@
 <body>
   <header class="title">
     <h1 class="title__heading">cool math problems</h1>
-    <caption class="title__caption">to suggest other cool problems, email coolmathproblems at gmail dot com.</caption>
+    <caption class="title__caption">To suggest other cool problems, email <a class="title__caption--link" href="mailto:coolmathproblems@gmail.com" target="_blank">coolmathproblems@gmail.com</a> or <a class="title__caption--link" href="https://github.com/cabellwg/coolmathproblems" target="_blank">submit a pull request</a>. Problems are organized by prerequisite knowledge, not difficulty.</caption>
   </header>
 
+  <section id="elementary" class="body">
+    <h3 class="body__heading">elementary</h3> 
+    <p>To organize a secret Santa exchange, $n$ people each put their own name into a hat. Then, they pass the hat around in a circle, each person choosing a name at random. As $n$ increases, what does the probability that no person will draw their own name approach?</p>
+  </section>
+
+  <section id="undergraduate" class="body">
+    <h3 class="body__heading">undergraduate</h3> 
+    <p></p>
+  </section>
+ 
+  <section id="graduate" class="body">
+    <h3 class="body__heading">graduate</h3> 
+    <p></p>
+  </section>
 
   <script async defer src="https://sa.coolmathproblems.com/latest.js"></script>
   <noscript>
