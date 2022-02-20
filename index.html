@@ -16,12 +16,12 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta
     name="description"
-    content="A list of cool math problems organized by prerequisite knowledge, but widely varying in difficulty. Some problems are quite trivial; others are very difficult."
+    content="A weekly-updated list of cool math problems. Some problems require little effort; others may be challenging."
   >
   <meta name="subject" content="Mathematics">
   <meta
     name="og:description"
-    content="A list of cool math problems organized by prerequisite knowledge, but widely varying in difficulty. Some problems are quite trivial; others are very difficult."
+    content="A weekly-updated list of cool math problems. Some problems require little effort; others may be challenging."
   >
   <meta http-equiv="Cache-Control" content="no-cache">
   <meta property="og:title" content="cool math problems">
@@ -66,12 +66,48 @@
     }
 
     .body {
-      padding: 1rem;
-      margin: 2rem auto;
+      padding: 0.5rem 1rem;
+      margin: 0 auto;
     }
 
     .body p {
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer {
+      padding: 0.5rem 1rem;
+      margin: 0 auto;
+    }
+
+    .footer__nav {
+	    list-style-type: none;
+	    padding: 0;
+	    display: flex;
+	    align-items: center;
+	    justify-content: flex-start;
+    }
+
+    .footer__nav li {
+	    padding: 0 0.5rem;
+    }
+
+    .footer__logo {
+	    width: 44px;
+    }
+
+    .footer__social-link {
+	    color: inherit;
+    }
+
+    .footer__social-link:hover {
+	    text-decoration-style: double;
+    }
+
+    .footer__last-updated {
+	    color: #aaa;
+	    font-size: 0.75rem;
+	    flex-grow: 20;
+	    text-align: right;
     }
 
     .katex-html {
@@ -88,25 +124,28 @@
 <body>
   <header class="title">
     <h1 class="title__heading">cool math problems</h1>
-    <caption class="title__caption">To suggest other cool problems, email <a class="title__caption--link" href="mailto:coolmathproblems@gmail.com" target="_blank">coolmathproblems@gmail.com</a> or <a class="title__caption--link" href="https://github.com/cabellwg/coolmathproblems" target="_blank">submit a pull request</a>. Problems are organized by prerequisite knowledge, not difficulty. Some problems are trivial; others are quite difficult.</caption>
+    <caption class="title__caption">Problems updated weekly. To suggest other cool problems, email <a class="title__caption--link" href="mailto:coolmathproblems@gmail.com" target="_blank">coolmathproblems@gmail.com</a> or <a class="title__caption--link" href="https://github.com/cabellwg/coolmathproblems" target="_blank">submit a pull request</a>.</caption>
   </header>
 
-  <section id="elementary" class="body">
-    <h3 class="body__heading">elementary</h3> 
-    <p>To organize a secret Santa exchange, $n$ people each put their own name into a hat. Then, they pass the hat around in a circle, each person choosing a name at random. As $n$ increases, what does the probability that no person will draw their own name approach?</p>
+  <section id="quick" class="body">
+    <h3 class="body__heading">quick</h3> 
     <p>Show that the average of any two consecutive odd prime numbers is composite.</p> 
     <p>Assume that no one has more than 200,000 hairs on their head. Assume also that London has a population of 8.7 million. Prove that there are two people in London with the exact same number of hairs on their head.</p>
-    <p>What is the expected value of the minimum of $n$ numbers randomly chosen from the unit interval $(0, 1)$?</p>
-    <p>Let $a, b, c$ be the radii of three circles such that $a \gt b \gt c$. If these circles are all three tangent to a single line, find the relationship between $a$, $b$, and $c$.</p>
-    <p>Find an equation for the path followed by a frisbee rolling along the ground.</p>
   </section>
 
-  <section id="undergraduate" class="body">
-    <h3 class="body__heading">undergraduate</h3> 
+  <section id="challenging" class="body">
+    <h3 class="body__heading">challenging</h3> 
     <p>Do there exist groups $G$ and $H$ distinct up to isomorphism such that $G \le H \le G$, where $\le$ is the subgroup relation?</p> 
-    <p>Find three disjoint open sets in the standard topology on $\mathbb{R}$ which share the same (non-empty!) boundary set.</p>
-    <p>A circular road has a random number of gas stations placed randomly around it. The combined amount of all the gas at all the gas stations on the road is exactly enough for you to travel all the way around. Will there always be a gas station at which you can start and be guaranteed to make it all the way around the road?</p>
   </section>
+
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li><img src="logo.png" class="footer__logo"></li>
+      <li><a target="_blank" href="https://www.twitch.tv/coolmathandgames" class="footer__social-link">Twitch</a></li>
+      <li><a target="_blank" href="https://www.instagram.com/coolmathproblems" class="footer__social-link">Instagram</a></li>
+      <li class="footer__last-updated">Last updated: 2022-02-20</li>
+    </ul>
+  </footer>
 
   <script async defer src="https://sa.coolmathproblems.com/latest.js"></script>
   <noscript>
